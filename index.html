@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kylie Hoang | Business Analyst</title>
+<meta name="description" content="Kylie Hoang is a Business Analyst and M.S. Information Sciences candidate at UIUC. Case studies in requirements gathering, KPI design and dashboards.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#top">Kylie Hoang</a>
+  <nav aria-label="Sections">
+    <a href="#work">Work</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <h1>I turn stakeholder questions into recommendations people can act on.</h1>
+    <p class="lede">I’m a Business Analyst finishing an M.S. in Information Sciences at the University of Illinois Urbana-Champaign (GPA 4.0). I gather requirements, reconcile messy data, and bring back a clear next step.</p>
+
+    <figure class="trail" aria-label="Example: how one project went from problem to impact">
+      <figcaption>One project, start to finish: University of Michigan IT Services</figcaption>
+      <ol>
+        <li>
+          <span class="step">Problem</span>
+          <p>No enterprise-wide dataset of IT applications</p>
+        </li>
+        <li>
+          <span class="step">Analysis</span>
+          <p>142 applications reconciled, 7 departments interviewed</p>
+        </li>
+        <li class="rec">
+          <span class="step">Recommendation</span>
+          <p>Consolidate overlapping tools</p>
+        </li>
+        <li>
+          <span class="step">Impact</span>
+          <p>Redundant application spend cut by an estimated 12%</p>
+        </li>
+      </ol>
+    </figure>
+  </section>
+
+  <section id="work" class="block">
+    <h2>Work</h2>
+    <p class="intro">Each piece below follows the same path: what was wrong, what I looked at, what I recommended, and what changed.</p>
+
+    <article class="case">
+      <div class="meta">
+        <h3>Enterprise Architecture Intern</h3>
+        <p>Information and Technology Services, University of Michigan</p>
+        <p class="when">May 2026 to present</p>
+      </div>
+      <dl class="story">
+        <dt>Problem</dt>
+        <dd>ITS had no single, governed record of its applications. Owners, dependencies, lifecycle status and business capabilities were not standardized.</dd>
+        <dt>Analysis</dt>
+        <dd>Worked with stakeholders across 7 departments to write a Business Requirements Document. Built ITS’s first enterprise application dataset in Excel, reconciling records for 142 applications, then analyzed usage to find overlapping tools and duplicate investments.</dd>
+        <dt class="rec">Recommendation</dt>
+        <dd class="rec">Delivered slide decks tailored to each stakeholder group’s requirements to inform consolidation decisions. Separately, evaluated generative AI use cases and recommended hallucination safeguards to leadership: source-grounded retrieval and human review.</dd>
+        <dt>Impact</dt>
+        <dd>Consolidation decisions informed by the analysis cut redundant application spend by an estimated 12%. Data flow diagrams and documentation (ArchiMate, HERM) explain how to read the datasets.</dd>
+      </dl>
+    </article>
+
+    <article class="case">
+      <div class="meta">
+        <h3>Data Consulting Analyst</h3>
+        <p>Educational Justice Project (DSDG), University of Illinois Urbana-Champaign</p>
+        <p class="when">September 2026 to present</p>
+      </div>
+      <dl class="story">
+        <dt>Problem</dt>
+        <dd>The project needed to see where learners drop off in its courses and what to change in course design.</dd>
+        <dt>Analysis</dt>
+        <dd>Developed a KPI framework and a learner feedback survey. Researched accessibility needs, benchmarked correctional education programs, and assessed what Edovo data exists, which gaps remain, and what data future engagement analytics will need.</dd>
+        <dt class="rec">Recommendation</dt>
+        <dd class="rec">Recommended course-design changes to Educational Justice Project and Edovo stakeholders.</dd>
+        <dt>Impact</dt>
+        <dd>In progress. A dashboard prototype showing learner engagement and drop-off, and an SOP on how to read it, are drafted.</dd>
+      </dl>
+    </article>
+
+    <article class="case">
+      <div class="meta">
+        <h3>Business Analyst, Performance and Campaign Analytics</h3>
+        <p>A25 International Hotel Group</p>
+        <p class="when">July 2024 to November 2024, remote</p>
+      </div>
+      <dl class="story">
+        <dt>Problem</dt>
+        <dd>Sales and engagement numbers across 3 brand channels took manual effort to report, which made campaign ROI and retention hard to track.</dd>
+        <dt>Analysis</dt>
+        <dd>Built Excel and Power BI dashboards that unify the data. Compared 10+ campaigns with PivotTables and lookups on engagement, retention and ROI, and read guest feedback, demographics and behavior to sharpen targeting.</dd>
+        <dt class="rec">Recommendation</dt>
+        <dd class="rec">Recommended the best video format and length, plus budget ranges for events and influencers (KOLs).</dd>
+        <dt>Impact</dt>
+        <dd>33% less manual reporting time. Engagement up 10% on average, and a new channel grew from 0 to 2K followers.</dd>
+      </dl>
+    </article>
+  </section>
+
+  <section id="projects" class="block">
+    <h2>Projects</h2>
+    <p class="intro">Each project starts with a business question. The repositories hold the code, data dictionaries and write-ups.</p>
+    <ul class="projects">
+      <li>
+        <h3>Grocery Campaign Effectiveness and Retention</h3>
+        <p class="when">Dunnhumby “The Complete Journey”. Analysis in progress</p>
+        <p><strong>Question:</strong> do grocery marketing campaigns change how customers shop, and does the change last? I’m working through 2 years of loyalty-card data: 2,500 households and 30 campaigns.</p>
+        <p><strong>So far:</strong> cleaned the data (2.5M clean transactions, 1.8% of rows removed) and documented every cleaning decision. Early findings show Type A campaigns have double the coupon redemption rate of Types B and C (16.0% vs. about 8%), though redeemers were already heavier shoppers, so redemption alone doesn’t show lift. Next up: spending lift against a matched comparison group, and a model of post-campaign drop-off.</p>
+        <a href="https://github.com/Lekimnganhoang3010/DUNNHUMBY-project">Code on GitHub</a>
+      </li>
+      <li>
+        <h3>Student Stress Factors Analysis</h3>
+        <p class="when">Group project, IS 507, UIUC</p>
+        <p><strong>Question:</strong> which parts of student life drive stress, and can we predict who is at risk? Survey data from 1,100 students across 21 factors.</p>
+        <p><strong>Finding:</strong> about two in three students report at least moderate stress. Logistic Regression (88.18%) and Random Forest (87.73%) predict stress level well, and clustering found three student profiles.</p>
+        <p><strong>Recommendation:</strong> support the “Overloaded” group first (poor sleep, noisy housing, unmet basic needs), and use a short screening survey built from the reduced feature set to flag at-risk students early.</p>
+        <a href="https://github.com/Lekimnganhoang3010/Student-Stress-Factors-Analysis">Code and report on GitHub</a>
+      </li>
+      <li>
+        <h3>Yelp Consumer Review Database</h3>
+        <p class="when">Individual project, UIUC</p>
+        <p><strong>Question:</strong> how should review data be structured so analysts can query it reliably? I gathered user requirements, defined entities and business rules, and drew a crow’s foot conceptual model.</p>
+        <p><strong>Built:</strong> a normalized schema for 9GB of Yelp review data, SQL table definitions, Python insertion programs, data dictionaries, sample queries, an evaluation plan and database administration procedures.</p>
+        <a href="https://github.com/Lekimnganhoang3010/Yelp-Database-Design-Prototyping">Code and report on GitHub</a>
+      </li>
+      <li>
+        <h3>SEC 13F Data Curator Challenge</h3>
+        <p class="when">DSRS, UIUC. Top finalist, August 2026</p>
+        <p><strong>Question:</strong> how can researchers study institutional holdings without parsing raw SEC filings?</p>
+        <p><strong>Built:</strong> a cached Python pipeline that turned 40 filings from 20 managers into 100K+ validated holdings in a queryable database, with a source-grounded read-only agent on top.</p>
+        <!-- TODO: add the repo URL here if this project has one -->
+        <a href="https://github.com/Lekimnganhoang3010">GitHub profile</a>
+      </li>
+    </ul>
+  </section>
+
+  <section id="skills" class="block">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <dt>Business analysis and stakeholder management</dt>
+      <dd>Stakeholder management, requirements gathering (BRD), KPI frameworks, data storytelling, data flow diagrams, SOPs and documentation, slide decks</dd>
+      <dt>Analytics and BI</dt>
+      <dd>Excel (dashboards, PivotTables, lookups), SQL, Power BI, Tableau, Python (pandas, NumPy, scikit-learn), R, SPSS</dd>
+      <dt>Data and governance tools</dt>
+      <dd>MySQL, data modeling, data quality and profiling, metadata, ArchiMate, HERM, Git/GitHub, Microsoft Azure, Streamlit</dd>
+    </dl>
+
+    <div class="edu">
+      <h3>Education</h3>
+      <p><strong>University of Illinois Urbana-Champaign.</strong> M.S. in Information Sciences, GPA 4.0, August 2025 to May 2027 (expected). Coursework: Applied Machine Learning, Data Analysis Methods, Data Storytelling, Data Warehousing and BI, Data Visualization.</p>
+      <p><strong>Coventry University.</strong> B.A. in Business and Marketing, Distinction, 2020 to 2023.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="block contact">
+    <h2>Contact</h2>
+    <p class="intro">I’m looking for Business Analyst roles. The fastest way to reach me is email.</p>
+    <ul>
+      <li><a href="mailto:lkhoang2@illinois.edu">lkhoang2@illinois.edu</a></li>
+      <li><a href="https://linkedin.com/in/hoang-le-kim-ngan">linkedin.com/in/hoang-le-kim-ngan</a></li>
+      <li><a href="https://github.com/Lekimnganhoang3010">github.com/Lekimnganhoang3010</a></li>
+      <li><a href="tel:+12176218153">(217) 621-8153</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>Kylie Hoang. Urbana, Illinois.</footer>
+</body>
+</html>
